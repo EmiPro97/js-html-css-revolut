@@ -1,0 +1,112 @@
+/* GENERAL STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+/* UTILITIES */
+
+/* Layout */
+.container{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+/* Text */
+.highlight{
+    color: #191c1f;
+    font-weight: 500;
+}
+
+/* List */
+.inline-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.inline-list li:not(.btn-wrap){
+    margin: 0 25px;
+}
+
+.inline-list li:first-child{
+    margin-left: 0;
+}
+
+.inline-list svg{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Buttun */
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 0px 5px 0px #ccc;
+    transition: background-color 0.4s;
+    cursor: pointer;
+}
+
+.btn-wrap{
+    margin-left: 25px;
+}
+
+.btn.light-btn{
+    color: #191c1f;
+    background: #f0f0f0;
+}
+
+.btn.dark-btn{
+    color: #fff;
+    background: #191c1f;
+}
+
+.btn.light-btn:hover{
+    background-color: rgba(219, 218, 218, 0.808);
+}
+
+.btn.dark-btn:hover{
+    background-color: rgba(25, 28, 31, 0.9);
+}
+
+.btn:active{
+    position: relative;
+    top: 3px;
+}
+
+
+/* HEADER */
+header{
+    height: 100px;
+}
+
+header a{
+    transition: color 0.3s;
+}
+
+header a:hover:not(.highlight, .btn){
+    color: #23282ccc;
+}
