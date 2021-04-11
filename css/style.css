@@ -34,6 +34,10 @@ a{
     justify-content: space-between;
 }
 
+.justify-around{
+    justify-content: space-around;
+}
+
 /* Text */
 .highlight{
     color: #191c1f;
@@ -111,12 +115,14 @@ header a:hover:not(.highlight, .btn){
     color: #23282ccc;
 }
 
+
 /* Dropdown */
 .wrap-right li.with-dropdown{
     position: relative;
 }
 
 li.with-dropdown .dropdown-menu{
+    display: none;
     position: absolute;
     top: 35px;
     left: -20px;
@@ -130,7 +136,6 @@ li.with-dropdown .dropdown-menu{
 li.with-dropdown .dropdown-menu.features{
     width: 835px;
     left: -200px;
-    justify-content: space-around;
 }
 
 li.with-dropdown .dropdown-menu.about{
